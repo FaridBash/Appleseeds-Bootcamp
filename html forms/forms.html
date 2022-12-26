@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php">
+      <section>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name">
+      </section>  
+      <section>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email">
+      </section>
+      <section>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+      </section>
+      <section>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="fmale">Female</option></select>
+      </section>
+      <section>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+      </section>
+      <section>
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate">
+      </section>
+      <label for="membership">membership</label>
+      <input type="radio" name="membership" value="simple" id ="membership">simple
+      <input type="radio" name="membership" value="standard" id="membership">standard
+    </form>
+</body>
+</html>
