@@ -1,0 +1,51 @@
+
+
+#main-section{
+    width: 960px;
+    margin: 30px auto;
+}
+
+.box{
+    background: #f4f4f4;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+}
+
+#box-1 p{
+    text-align: center;
+}
+#box-2 p{
+    margin:15px 15px 0 15px;
+    text-align: left;
+}
+#box-3 p{
+    margin:15px 15px 0px 0px;
+    text-align: right;
+}
+#box-4 p{
+    text-align: center;
+}
+
+#box-1{
+    background: #ffcc00;
+}
+#box-2{
+    background: #058305;
+    float: left;
+    width: 30%;
+    height: 200px;
+    
+}
+
+#box-3{
+    background-color: #5c215e;
+    float: right;
+    width: 69%;
+    height: 200px;
+    
+}
+
+#box-4{
+    background-color: #2853e0;
+    clear: both;
+}
