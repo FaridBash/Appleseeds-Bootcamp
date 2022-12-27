@@ -1,0 +1,42 @@
+*{
+    margin: 30px auto;
+    padding: 0;
+    text-align: left;
+}
+
+#card {
+    background-color: beige;
+    border:2px;
+    box-shadow: 10px 5px 5px grey;
+    height: 450px;
+    max-width: 300px;
+    margin: auto;
+
+}
+
+#card img{
+   height: 300px;
+   max-width: 300px;
+   margin: 0px;
+   line-height: 0.5;
+   
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+    line-height: 0.75;
+}
+h2{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6; 
+}
+
+nav{
+    padding: 0px;
+    margin: 5px 5px 5px 0px;
+    color: #af9605;
+    font-size: small;
+    line-height: 2;
+    
+}
