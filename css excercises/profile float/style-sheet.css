@@ -1,0 +1,78 @@
+
+
+#profile_img {
+    max-width: 100%;
+    text-align: center;
+    margin:auto;
+    /* margin-bottom: 20px;
+    padding: 20px; */
+}
+
+#headers{
+    width: 38%;
+    margin:auto;
+    line-height: 0.5;
+    float: left;
+    
+    
+}
+
+h1{
+    font-family: 'Signika Negative', sans-serif;
+}
+h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#info{
+    width: 60%;
+    height: 150px;
+    margin:auto;
+    float: left;
+    
+    text-align: center;
+
+}
+#main-card{
+    color: #fff;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+    width: fit-content;
+    height: 700px;
+    background: rgb(2,0,36);
+    background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(9,96,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#social_media{
+    clear: both;
+    border-radius: 25px;
+    width: 460px;
+    height: 100px;
+    background-color: rgb(20, 87, 145);
+    margin: auto;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgb(69, 84, 107);
+    color: #c5d0ef;
+    
+}
+
+span{
+    font-family: 'Signika Negative', sans-serif;
+    font-style: italic;
+}
+
+/* hr{
+
+    border-style: solid;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+} */
+
+a{
+    color: #2095ef;
+}
+
