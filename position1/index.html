@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        the absolute position gives the position related to the body unless 
+        the outer box is related to body with relative position
+        the other solution will be changing the position of the inner box to be relative to the outer box
+        */
+        #outer{
+            position: relative;
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background: darkcyan;
+            
+        }
+
+        #inner{
+            position: absolute;
+            top: 10px;
+            width: 50px;
+            height: 50px;
+            background: #3ac95e;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="outer">
+    <div id="inner"></div>
+</div>
+
+</body>
+</html>
