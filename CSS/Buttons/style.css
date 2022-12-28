@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: #30475e;
+}
+#main-section{
+    text-align: center;
+    background: #30475e;
+}
+
+h1{
+    margin: 20px;
+    color: #fff;
+}
+
+.btn{
+    margin: 20px 50px;
+}
+
+/* Register Buttons */
+#register-flat{
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    background: #0c76e0;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+#register-flat:hover{
+    background: #0566c7;
+}
+
+#register-round{
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    background: #0fa942;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+}
+
+#register-round:hover{
+    background: #076403;
+}
+
+#register-flatghost{
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    background: transparent;
+    border-color: #c84006;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+#register-flatghost:hover{
+    background: #c84006;
+    border: none;
+}
+
+#register-roundghost{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: medium;
+    background: transparent;
+    border-color: #bbc806;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+#register-roundghost:hover{
+    background: #bbc806;
+    border: none;
+}
+
+/* Submit Buttons */
+#submit-flat{
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    background: #e2ce58;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+}
+
+
+#submit-flat:hover{
+    background: #dfbb0c;
+}
+
+#submit-round{
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    background: #e26a58;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px;
+}
+
+
+#submit-round:hover{
+    background: #eb5741;
+}
+
+#submit-flatghost{
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    border-color: #8d3a9c;
+    
+}
+
+
+#submit-flatghost:hover{
+    background: #8d3a9c;
+    border: none;
+}
+
+#submit-roundghost{
+    width: 70px;
+    height: 35px;
+    font-size: medium;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    border-color: #0e6b0b;
+    border-radius: 30px;
+    
+}
+
+
+#submit-roundghost:hover{
+    background: #0e6b0b;
+    border: none;
+}
