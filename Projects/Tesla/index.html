@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3231e1c726.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="page1">
+        <header>
+            <nav id="msg">
+                <p>Take delivery of a new Model 3 between December 21 and 31, 2022 for a $7,500 credit and 10,000 miles of free Supercharging.</p>
+                <a href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=95113&range=200">See available inventory.</a>
+            </nav>
+            <nav id="navbar">
+                
+                   <section><h3>T E S L A</h3></section>
+                   <section id="midnav" >
+                       <ul >
+                           <li><a href="#">Model S</a></li>
+                           <li><a href="index.html">Model 3</a></li>
+                           <li><a href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email%20phone&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=en-US">Model X</a></li>   
+                           <li><a href="#">Model Y</a></li>   
+                           <li><a href="#">Solar Roof</a></li>   
+                           <li><a href="#">Solar Panels</a></li>  
+                       </ul>
+                   </section>
+                   <section id="rightnav">
+                    <ul>
+                        <li><a href="https://shop.tesla.com/">shop</a></li>
+                        <li><a href="https://auth.tesla.com/">Account</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                   </section>
+                
+            </nav>
+        </header>
+        
+        <section id="sched">
+            <h1>Model 3</h1>
+            <a href="https://www.tesla.com/drive">Schedule a Demo Drive</a>
+        </section>
+        <div class="clr"></div>
+        
+            <div class="btn"><button></button></div>
+            <div class="hide">MODEL 3</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">SAFETY</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">PERFORMANCE</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">ALL-WHEEL DRIVE</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">RANGE</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">AUTOPILOT</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">NTERIOR</div>
+            <div class="clr"></div>
+            <div class="btn"><button></button></div>
+            <div class="hide">ORDER</div>
+            <div class="clr"></div>
+            <button id="chat" class="fa-regular fa-comment-dots fa-2x" onclick="openForm()"> </button>
+            <!-- The form -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <nav>
+            <h4 id="form-header">Question center</h4>
+            <p id="cxl" onclick="closeForm()">X</p>
+        </nav>
+      <h1 id="what">What can we help you with</h1>
+      <p id="tell-us">Tell us more and our customer support team will help you find the answers</p>
+      
+      <button class="form-btn">Help With Previous Purchases</button>
+      <button class="form-btn">Buying Tesla Products</button>
+      <button class="form-btn">Questions About Delivery</button>
+      <button class="form-btn">Schedule Demo Drive</button>
+
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+     
+    </form>
+        </section>
+    <footer>
+
+        <ul id="ul-footer">
+            <li><h1><span>3.1</span>s</h1>
+                <p>0-60 mph*</p></li>
+            <li><h1><span>358</span>mi</h1>
+                <p>Range (EPA est.)</p></li>
+            <li><h1>AWD</h1>
+                <p>Dual Motor</p></li>
+            <li><button>Buy Now</button></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
