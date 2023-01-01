@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: auto;
+    padding:20px 5px;
+    text-align: left;
+    
+}
+section{
+    width: 20%;
+    height: 10%;
+    background: #333;
+    color: #fff;
+    display: inline;
+    margin: 30px;
+    padding:20px 30px;
+    border: 1px solid #333;
+    float: left;
+    
+}
+
+
+@media (max-width:500px){
+
+    body{
+        width: 100%;
+        margin: auto;
+        padding:20px 5px;
+        text-align: left;
+        
+    }
+    section{
+        width: 50%;
+        height: 20%;
+        background: #333;
+        color: #fff;
+        padding:20px 30px;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        display: block;
+        
+    }
+}
