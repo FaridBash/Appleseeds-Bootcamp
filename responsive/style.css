@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    display: none;
+}
+/* smartphones */
+
+@media(max-width: 500px){
+    body{
+        background:red;
+    }
+    #smartphones h1{
+        display: block;
+    }
+}
+
+
+@media (min-width:501px) and (max-width: 768px){
+    body{
+        background: blue;
+    }
+    #tablet h1{
+        display:block;
+    }
+}
