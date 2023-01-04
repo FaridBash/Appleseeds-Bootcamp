@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-grid{
+            
+            position: relative;
+            top: 20vh;
+            left: 15vw;
+            width: 50%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 1rem;
+        }
+        .box{
+            padding: 3rem;
+            background-color: rebeccapurple;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        
+        .box1{
+            grid-column: 1/ 5;
+            background: rgb(233, 116, 116) ;
+        }
+        .box2{
+            grid-column: 5/ 9;
+            background: rgb(76, 70, 239) ;
+        }
+        .box3{
+            grid-column: 1/3;
+            background: rgb(28, 146, 40) ;
+        }
+        .box4{
+            grid-column: 3/9 ;
+            background: rgb(79, 28, 146) ;
+        }
+        .box5{
+            grid-column: 1/span 8 ;
+            background: rgb(216, 252, 86) ;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-grid">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        
+        
+    </main>
+    
+</body>
+</html>

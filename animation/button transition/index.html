@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10rem;
+    }
+
+    button{
+        background: transparent;
+        width: 10rem;
+        height: 4rem;
+        margin: 10px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    .tanslatey {
+        position: relative;
+        width: 10rem;
+        height: 4rem;
+        background: transparent;
+        /* border-style: none; */
+    }
+
+    .tanslatey::before{
+        content: '';
+        width: 10rem;
+        height: 4rem;
+        position:absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: transparent;
+        transition: transform 5s;
+    }
+    
+    .tanslatey:hover::before{
+        content: 'Cool!';
+        align-content: center;
+        width: 10rem;
+        height: 4rem;
+        background: red;
+        display: block;
+        transition-duration:10s ;
+        transition: translateY(10px);
+        /* animation: animate1 2s backwards ease-out; */
+
+        }
+        @keyframes animate1{
+            to{
+                height: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <button class="tanslatey">TranslateY</button>
+    
+
+</body>
+</html>
