@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function getoday(){
+        const date = new Date();
+        const month=date.getMonth();
+        const day=date.getDate()+1;
+        const year=date.getFullYear();
+        const day2 = date.getDay();
+        // console.log(day);
+       let daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+       let todayInDays=daysInWeek[day2];
+
+       let mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+       let monthInWords=mL[month];
+        return ("Today is "+ todayInDays+" the "+ (day) +" of "+ monthInWords +" "+ year);
+    }
+    
+    
+    
+    
+</script>
+</html>
