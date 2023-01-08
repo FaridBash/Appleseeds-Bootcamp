@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+</body>
+<script>
+    function countryInfo(country, population, capitalCity ){
+
+        let myAnswer=country+" has "+population+" million people and its capital city is "+capitalCity;
+        
+        return myAnswer;
+    }
+
+    const usa=countryInfo('usa', 100, 'Washington, D.C.');
+    console.log(usa);
+    const England=countryInfo('UK', 80, 'LOndon');
+    console.log(England);
+    const Russia=countryInfo('RU', 100, 'Moscow');
+    console.log(Russia);
+</script>
+</html>
