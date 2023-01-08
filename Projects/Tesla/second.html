@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-second.css">
     <title>Document</title>
 </head>
-<body id="second-page">
-    <section id="part1">
-        <div class="btn"><button></button></div>
+<body>
+    <section class="part1">
+                <div class="btn"><button onclick = "window.location.href='index.html';"></button></div>
                 <div class="hide">MODEL 3</div>
                 <div class="clr"></div>
-                <div class="btn"><button></button></div>
+                <div class="btn"><button class="current2" onclick = "window.location.href='second.html';"></button></div>
                 <div class="hide">SAFETY</div>
                 <div class="clr"></div>
-                <div class="btn"><button></button></div>
+                <div class="btn"><button onclick = "window.location.href='third-index.html';"></button></div>
                 <div class="hide">PERFORMANCE</div>
                 <div class="clr"></div>
                 <div class="btn"><button></button></div>
@@ -35,11 +35,28 @@
                 <div class="clr"></div>
 
     </section>
-    <section id="part2"></section>
-    <section id="part3">
-        <p>Safety</p>
-        <h2>Built for Saftey</h2>
+    <section class="part2">
+        <img src="./img/skeleton.jpg" alt="">
+    </section>
+    <section class="part3">
+        <h4>Safety</h4>
+        <h1>Built for Saftey</h1>
         <p id="para1">Safety is the most important part of every Tesla. We design our vehicles to <a href="#">exceed safety standards.</a></p>
+
+        <h3>5-Star Rating</h3>
+        <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
+
+        <h3>Top Safety Pick+</h3>
+        <p>Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
+
+        <footer>
+            <section id="learn-more">
+                <button>+</button>
+                <h5>Learn More</h5>
+            </section>
+            <section id="order-now"><Button>Order Now</Button></section>
+        </footer>
+
     </section>
 </body>
 </html>

@@ -5,14 +5,13 @@
 }
 body{
     color: #fff;
-    background: red;
+    /* background: red; */
     background: url('../img/Model-3-Main-Hero-Desktop-LHD.jpg') no-repeat center center/cover ;
 }
 #page1{
-    clear: both;
    
-    min-height: 1000px;
-   
+    min-height: 88vh;
+    min-width: 100vw;
 }
 
 /* Fonts */
@@ -32,7 +31,7 @@ a {
     color: #fff;
 }
 /* Navbar */
-#msg{
+/* #msg{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -53,20 +52,37 @@ a {
     text-decoration: underline;
     display: inline;
     color: #333;
-    
-}
+} */
 #navbar{
     background: transparent;
-    margin: auto;
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0.25vh 1vw;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0;
     width: 100%;
-    overflow: auto;  
-    padding: 15px;
     position: fixed;
-    top: 0;
-    left: 0;
-    
-    
+}
+
+#navbar section{
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    padding-top: 0.75rem;
+    animation-name: animate2;
+    animation-duration: 1s ;
+}
+
+@keyframes animate2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #navbar a{
@@ -77,39 +93,33 @@ a {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
+    
 }
 
 #navbar h3{
-    width: 30%;
     text-decoration: none;
     font-family: teslaFont;
     color: #fff; 
-    padding-top: 15px;
-    float: left;
-    margin: auto;
     text-align: left;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+    
 }
 #navbar h3:hover{
     cursor: pointer;
 }
 #midnav{
-    width: 50%;
-    float: left;
-    margin: auto;
-    text-align: center;
-    
-    
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    text-align: center !important; 
+    align-items: center !important;
+    flex-shrink: 0;
 }
-#rightnav{
-    width: 30%;
-    display: inline;
-    margin: auto;
-    text-align: right;
-    
-}
+
 #navbar ul{
     list-style: none;
-    float: left;
+    padding-right: 2rem;
     
 }
 
@@ -133,12 +143,27 @@ a {
     clear: both;
     font-family: 'Gotham SSm', sans-serif ;
     color: #fff;
+    position: relative;
+    top: 15vh;
     margin: 144.64px, 0px 0px;
     margin: auto;
     text-align: center;
-    padding-top: 28vh;
+    /* padding-top: 18vh; */
     width: fit-content;
-    
+    animation-name: animate1;
+    animation-duration: 1s ;
+
+}
+
+@keyframes animate1{
+   from{
+    opacity: 0;
+    top: 19vh;
+   }
+    to{
+        opacity: 1;
+        top: 15vh;
+    }
 }
 
 #sched h1{
@@ -146,20 +171,31 @@ a {
 }
 
 #sched a{
+    font-size: 1rem;
     text-decoration: underline;
 }
 
 .clr{
     clear: both;
 }
-#sidebtn{
+/* #sidebtn{
     padding-left: 20px;
     margin-top: 0vh;
     
+} */
+#side-btns{
+    position: fixed;
+    top: 28vh;
+}
+.current1{
+    background: #fff;
+}
+.current2{
+    background: #333;
 }
 #btn1, #btn2, #btn3, #btn4,
 #btn5, #btn6, #btn7, #btn8, #btn9{
-    width: 6px;
+    width: 1px;
     height: 35px;
     display: block;
     opacity: 0.5;
@@ -204,17 +240,33 @@ a {
 /* footer #ameter ,footer #mi, footer #awd, footer #buy-now{
     display: inline;  
 } */
-
+/* #footer-holder{
+    width: 500px;
+} */
 footer{
-    width: 100%;
+    width: 80%;
     background: transparent;
-    padding: 20px;
+    /* padding: 20px; */
+    position: relative;
+    bottom: 1rem;
     margin: auto;
     text-align: center;
     overflow: auto;
     box-sizing: border-box;
+    animation-name: animate-footer;
+    animation-duration: 1s;
 }
 
+@keyframes animate-footer{
+    from{
+     opacity: 0;
+     bottom: -3rem;
+    }
+     to{
+         opacity: 1;
+         bottom: 1rem;
+     }
+ }
 
 footer ul{
    width: 1000px;
@@ -344,65 +396,5 @@ footer button:hover{
     color: #333;
   }
 
-  /* second page */
-  *{
-   margin: 0;
-   padding: 0;
 
-  }
-
-  /* #second-page{
-
-    background: rgb(170, 40, 40);
-    width:100%;
-    height: 100%;
-   
-    
-  }
-
-  #part1{
-    width: 12%;
-    margin-top: 300px;
-    float: left;
-    display: inline;
-  }
-
-  #part2{
-    width: 60%;
-    height: 1000px;
-    margin-left: 10px;;
-    text-align: left;
-    background: url('../img/model_3_safety_hero.png') no-repeat center center ;
-    background-size: contain;
-    display: inline;
-    float: left;
-  }
-
-  #part3{
-    width: 27%;
-    height: 1000px;
-    background-color: aqua;
-    float: right;
-    margin: auto;
-    margin-left: 0;
-    padding-top: 50px;
-    
-
-  }
-  #part3 p{
-    margin: auto;
-    text-align: center;
-    padding-right: 100px;
-  }
-  #part3 h2{
-    margin: auto;
-    text-align: center;
-    
-  }
-
-  #para1{
-    width: 100%;
-    margin: auto;
-    text-align: left;
-  }
- */
+  

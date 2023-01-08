@@ -12,10 +12,10 @@
 <body>
     <section id="page1">
         <header>
-            <nav id="msg">
+            <!-- <nav id="msg">
                 <p>Take delivery of a new Model 3 between December 21 and 31, 2022 for a $7,500 credit and 10,000 miles of free Supercharging.</p>
                 <a href="https://www.tesla.com/inventory/new/m3?arrangeby=relevance&zip=95113&range=200">See available inventory.</a>
-            </nav>
+            </nav> -->
             <nav id="navbar">
                 
                    <section><h3>T E S L A</h3></section>
@@ -29,8 +29,8 @@
                            <li><a href="#">Solar Panels</a></li>  
                        </ul>
                    </section>
-                   <section id="rightnav">
-                    <ul>
+                   <section>
+                    <ul id="rightnav">
                         <li><a href="https://shop.tesla.com/">shop</a></li>
                         <li><a href="https://auth.tesla.com/">Account</a></li>
                         <li><a href="#">Menu</a></li>
@@ -45,14 +45,14 @@
             <a href="https://www.tesla.com/drive">Schedule a Demo Drive</a>
         </section>
         <div class="clr"></div>
-        
-            <div class="btn"><button></button></div>
+        <section id="side-btns">
+            <div class="btn"><button class="current1" onclick = "window.location.href='index.html';"></button></div>
             <div class="hide">MODEL 3</div>
             <div class="clr"></div>
-            <div class="btn"><button></button></div>
+            <div class="btn"><button id="second" onclick = "window.location.href='second.html';"></button></div>
             <div class="hide">SAFETY</div>
             <div class="clr"></div>
-            <div class="btn"><button></button></div>
+            <div class="btn"><button onclick = "window.location.href='third-index.html';"></button></div>
             <div class="hide">PERFORMANCE</div>
             <div class="clr"></div>
             <div class="btn"><button></button></div>
@@ -70,8 +70,14 @@
             <div class="btn"><button></button></div>
             <div class="hide">ORDER</div>
             <div class="clr"></div>
+        </section>
+        <div id="footer-holder">
             <button id="chat" class="fa-regular fa-comment-dots fa-2x" onclick="openForm()"> </button>
+        </div>
+        <element onscroll="myScript"></element>
+        
             <!-- The form -->
+
 <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
         <nav>
@@ -80,12 +86,11 @@
         </nav>
       <h1 id="what">What can we help you with</h1>
       <p id="tell-us">Tell us more and our customer support team will help you find the answers</p>
-      
       <button class="form-btn">Help With Previous Purchases</button>
       <button class="form-btn">Buying Tesla Products</button>
       <button class="form-btn">Questions About Delivery</button>
       <button class="form-btn">Schedule Demo Drive</button>
-
+    </section>
       <script>
         function openForm() {
           document.getElementById("myForm").style.display = "block";
@@ -97,7 +102,6 @@
         </script>
      
     </form>
-        </section>
     <footer>
 
         <ul id="ul-footer">
@@ -111,5 +115,47 @@
         </ul>
 
     </footer>
+
+    <!-- <script>
+        window.addEventListener('scroll', ()=> {
+            document.getElementById("second").click();
+        })
+    </script>
+     -->
+
+     <!-- <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          if (document.documentElement.scrollTop > 50) {
+            document.getElementById("chat").click();
+          } else {
+            document.getElementById("second").click();
+          }
+        }
+        </script> -->
+
+        <!-- <script>
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              if (document.documentElement.scrollTop > 50) {
+                setInterval(function () {
+        document.getElementById("chat").click();
+    }, 5000);
+                // document.getElementById("chat").click();
+              } else {
+                document.getElementById("second").click();
+              }
+            }
+            </script> -->
+
+            <script>
+                function myFunction() {
+                    document.getElementById("second1").click()=scrollY;
+                    
+                }
+                </script>
+
 </body>
 </html>
