@@ -11,22 +11,27 @@
 </body>
 
 <script>
-    const percentageOfWorld1=p=>((p/7900)*100).toFixed(2) +("%");
-    const firstCount=percentageOfWorld1(1441);
-    const secCountry=percentageOfWorld1(5511);
-    const thirdCountry=percentageOfWorld1(1111);
-    console.log(firstCount);
-    console.log(secCountry);
-    console.log(thirdCountry);
+    // const percentageOfWorld1=p=>((p/7900)*100).toFixed(2) +("%");
+    function percentageOfWorld1(p){
+        const population=((p/7900)*100).toFixed(2) +("%");
+        return population;
+    }
+    const China=1441;
+    const Russia=5511;
+    const greece=1111;
+    console.log(percentageOfWorld1(China));
+    console.log(percentageOfWorld1(Russia));
+    console.log(percentageOfWorld1(greece));
+    
 
     console.log("Second function")
     const percentageOfWorld2=p=>((p/7900)*100).toFixed(2) +("%");
-    const firstCount2=percentageOfWorld1(1441);
-    const secCountry2=percentageOfWorld1(5511);
-    const thirdCountry2=percentageOfWorld1(1111);
+    const China2=1441;
+    const Russia2=5511;
+    const greece2=1111;
 
-    console.log(firstCount2);
-    console.log(secCountry2);
-    console.log(thirdCountry2);
+    console.log(percentageOfWorld2(China2));
+    console.log(percentageOfWorld2(Russia2));
+    console.log(percentageOfWorld2(greece2));
 </script>
 </html>
