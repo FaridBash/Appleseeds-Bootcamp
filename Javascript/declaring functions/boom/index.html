@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const printNumbers=n=>{
+        for(let i=1; i<=n; i++ ){
+            let arr = String(i).split("").map((i)=>{
+                return Number(i);
+            })
+            if(i%7==0){
+                if(arr.includes(7)){
+                    console.log('BOOM-BOOM!');
+                }
+                else {
+                    console.log('BOOM');
+                 }
+            }
+            else{
+                    console.log(i);
+            }
+        }
+        
+        return ;
+    }
+
+</script>
+
+
+</html>
