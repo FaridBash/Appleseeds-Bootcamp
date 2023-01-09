@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const avg=(a, b, c)=>{
+        const A=a;
+        const B=b;
+        const C=c;
+        console.log((A+B+C)/3);
+        return (A+B+C)/3
+    }
+
+    const mike=avg(116, 94, 123);
+    const john=avg(89,120,103);
+
+
+    const team=(mike, john)=>{
+        let winner='';
+        if(mike!=john){
+            if(mike>john){
+                winner='mike';
+            }
+            else{
+                winner='john';
+            }
+        }
+        else{
+            winner='Taeko!'
+        }
+        const mary=avg(97,134,105);
+        if (winner!='Taeko!'){
+            if(mary>mike && mary >john){
+                winner='mary';
+            }
+            else{
+                if(mary==mike && mary){
+                    winner='Taeko!'
+                }
+            }
+        }
+        
+
+        console.log(winner +" is winner");
+    }
+
+    team(mike, john);
+</script>
+
+</html>
