@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible"
+content="IE=edge" />
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<h1>Header</h1>
+<p>Paragraph</p>
+<a href="#">link</a>
+<img src="" alt="" />
+<div class="x">Div with a class</div>
+<div id="y">Div with an id</div>
+<input type="text" />
+<input type="text" />
+<input type="text" />
+</body>
+<script>
+//your js code here
+const selectH1=document.getElementsByTagName("h1");
+const selectp=document.getElementsByTagName("p");
+const selectLink=document.getElementsByTagName("a");
+const selectimg=document.getElementsByTagName("img");
+const selectDivX=document.getElementsByClassName("x");
+const selectDivy=document.getElementById("y");
+const selectInput=document.getElementsByTagName("input");
+
+const querySelectH1=document.querySelector("h1");
+const querySelectP=document.querySelector("p");
+const querySelectLink=document.querySelector("a");
+const querySelectimg=document.querySelector("img");
+const querySelectDivX=document.querySelector(".x");
+const querySelectDivY=document.querySelector("#y");
+const querySelectInput=document.querySelectorAll("input");
+
+for (let i of selectInput) {
+    console.log(i);
+}
+for (let i of querySelectInput) {
+    console.log(i);
+}
+
+
+
+
+</script>
+</html>
