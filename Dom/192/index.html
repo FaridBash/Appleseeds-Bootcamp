@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const users = [
+{
+id: 167464,
+firstName: "Jimmy",
+lastName: "Arnold",
+email: "jimmya@gmail.com",
+},
+{
+id: 578447,
+firstName: "Martha",
+lastName: "Goldman",
+email: "gold@hotmail.com",
+},
+{
+id: 864578,
+firstName: "Tim",
+lastName: "Burton",
+email: "timmy.hotmail.com",
+},
+];
+
+const ol=document.createElement("ol");
+const place=document.body;
+place.appendChild(ol);
+ol.style.listStyle="none";
+// const li=document.querySelector("ol").createElement("li");
+const myList=users.forEach(element => {
+// console.log(element.firstName +" "+ element.lastName);
+const li=document.createElement("li");
+const holder=document.querySelector("ol");
+holder.appendChild(li);
+li.innerText=element.firstName +" "+ element.lastName;
+});
+const lis=document.querySelectorAll('li');
+lis[0].setAttribute('data-id',5645);
+lis[1].setAttribute('data-id',5646);
+lis[2].setAttribute('data-id',5647);
+// document.getElementsByTagName('li').setAttribute('data', "id:555");
+
+
+</script>
+</html>
