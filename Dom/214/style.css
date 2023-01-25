@@ -1,0 +1,54 @@
+
+section{
+    width: 30rem;
+    height: 30rem;
+    background: grey;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+.turnOff{
+    background: rgb(139, 138, 138);
+}
+
+.turnOn{
+    background: rgb(179,179,179);
+background: linear-gradient(172deg, rgba(179,179,179,1) 0%, rgba(245,249,66,1) 96%);
+}
+
+#circle1{
+    width: 10rem;
+    height: 10rem;
+    
+    margin: auto;
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    border-radius: 50%;
+    border: 1px solid #333;
+    z-index: 2;
+    
+}
+#circle2{
+
+    width: 3rem;
+    height: 5rem;
+    background: rgb(202, 199, 199);
+    position: absolute;
+    top:10rem;
+    left: 13.5rem;
+
+}
+button{
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 5rem;
+    left:12rem;
+    
+}
+
+
+img{
+    background: white;
+}
