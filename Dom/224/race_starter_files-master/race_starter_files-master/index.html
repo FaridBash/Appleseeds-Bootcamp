@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Race 🏎</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <h1 class="text-center">Race</h1>
+    </div>
+    <hr />
+    <!-- You race HTML code here -->
+    <table class="racer-table">
+      <tr id="player1-race">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="finish"></td>
+      </tr>
+      <tr id="player2-race">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="finish"></td>
+      </tr>
+    </table>
+    <hr />
+  </body>
+  <script>
+  
+    let winner=false;
+
+    function move(num){
+      let mPlayer=document.getElementsByClassName('active');
+      if(mPlayer[num].nextElementSibling!=null){
+        let newPlayer=mPlayer[num].nextElementSibling;
+        newPlayer.classList.add('active');
+        mPlayer[num].classList.remove('active');
+        console.log(newPlayer.innerText);
+      }
+      else {
+        winner=true;
+        const win=document.createElement('h3');
+        win.innerText=`Player ${(num+1)} WOON`;
+        const holder=document.querySelector('hr');
+        holder.appendChild(win);
+        
+      }
+    }
+
+
+    // function restart(num){
+    //   // pa.parentElement.children[0].firstChild.firstElementChild
+    //   let mPlayer=document.getElementsByClassName('active');
+    //   let holder=mPlayer[num].parentElement.children[num].firstChild;
+    //   holder.nextElementSibling.classList.add('active');
+    //   mPlayer[num].classList.remove('active');
+    //   winner=false;
+    // }
+
+
+    window.addEventListener('keyup',e=>{
+        console.log(e.key);
+
+        if(e.key=='ArrowUp' && winner!=true){
+          move(0);
+        }
+        
+        if(e.key=='q' && winner!=true){
+          move(1);
+        }  
+        // if(e.key=='r'){
+        //   restart(0);
+        //   restart(1);
+        // }  
+
+        
+
+      });
+
+
+      </script>
+</html>
