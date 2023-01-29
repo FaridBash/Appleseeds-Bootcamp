@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <img src="jessica-fadel-3EltJNXdQMA-unsplash.jpg" alt="photo" id="myImage">
+</body>
+<script>
+
+const checkboxBtn=document.getElementById('check');
+const photo=document.getElementById('myImage');
+photo.style.display='none';
+
+
+checkboxBtn.addEventListener('change', e=>{
+    photo.style.display= checkboxBtn.checked? 'block':'none';
+});
+</script>
+</html>
