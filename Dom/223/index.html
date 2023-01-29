@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #AFD8E7;
+            
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        #box{
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid rgb(17, 119, 207);
+            color: rgb(17, 119, 207);
+            margin:2rem auto;
+            padding: 10px;
+            font-weight: 600;
+
+        }
+
+        h4{
+            margin-top: 3rem;
+        }
+
+    </style>
+    <title>Guess my Letter</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Welcome To Guess My Letter</h1>
+        <div id="box"><p id="myLet">?</p></div>
+        <p id="rw">Guess a key</p>
+        <h4>Keys guessed</h4>
+        <P id="keys-guessed"></P>
+    </main>
+
+</body>
+<script>
+    const letters=["a", "b", "c", 
+    "d", "e", "f", "g", "h", "i", 
+    "j", "k", "l", "m", "n", "o", 
+    "p", "q", "r", "s", "t", "u", 
+    "v", "w", "x", "y", "z"];
+
+    const keyGuessedP=document.getElementById('keys-guessed');
+    const myLet=document.getElementById('myLet');
+    const yesBtn=document.createElement('button');
+    const playAgainP=document.createElement('h5');
+    const rwP=document.getElementById('rw');
+    let str='';
+    let guessedBool=false;
+    
+    function game(){
+        let index=Math.floor(Math.random() * letters.length);
+        const hiddenLetter=letters[index];
+        console.log(hiddenLetter);
+        myLet.innerText="?";
+        console.log("?: "+myLet.innerText);
+        window.addEventListener('keypress', e=>{
+            // console.log("pressed: "+ e.key);
+            const typedLetter=e.key;
+            if(str.length===0 && !guessedBool){
+                str+=typedLetter;
+            }
+            else if(str.length!=0 && !guessedBool){
+                str+=(','+typedLetter);
+                console.log("str: ",str);
+            }
+                        
+            keyGuessedP.innerText=str;
+            // console.log("keyguessedstr: "+str);
+            console.log("if true:" + typedLetter==hiddenLetter);
+            if(typedLetter===hiddenLetter){
+                guessedBool=true;
+                rwP.innerText="That's Right";
+                rwP.style.color='green';
+                myLet.innerText=hiddenLetter;
+                playAgainP.innerText="Would you like to play again?";
+                playAgainP.style.color="black";
+                rwP.appendChild(playAgainP);
+                playAgainP.style.margin='2rem';
+                yesBtn.innerText="yes";
+                yesBtn.style.display='block';
+                yesBtn.style.margin='2rem auto';
+                rwP.appendChild(yesBtn);
+                str='';
+                keyGuessedP.innerText='';
+            }
+            else if(e.key!==hiddenLetter && !guessedBool){
+                rwP.innerText="Nope, Wrong Letter"
+                rwP.style.color='red';
+            }
+        });
+    }
+
+
+    yesBtn.addEventListener('click', e=>{
+        // str='';
+        rwP.style.color="black";
+        // playAgainP.removeChild(yesBtn);
+        rwP.innerHTML='';
+        rwP.innerText="Guess a key";
+        // rwP.removeChild(playAgainP);
+        guessedBool=false;
+        console.log("bool"+guessedBool);
+        game();
+    });
+
+    game();
+</script>
+</html>
