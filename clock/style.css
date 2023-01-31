@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#outer-clock{
+    width: 15rem;
+    height: 15rem;
+    background-color: #d4a373;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+#inner-clock{
+    width: 13rem;
+    height: 13rem;
+    background: #faedcd;
+    border-radius: 50%;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+#cover{
+    width: 11rem;
+    height: 11rem;
+    background: #faedcd;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 7.5%;
+    
+}
+
+
+#twix{
+    width: 2px;
+    height: 100%;
+    background: rgb(133, 39, 39);;
+    margin: auto;
+    position: absolute;
+}
+#nine-three{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background: rgb(133, 39, 39);
+    margin: auto;
+    align-items: center;
+    transform: rotate(90deg);
+    top: 0;
+
+}
+#one-seven{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background: #d4a373;
+    margin: auto;
+    align-items: center;
+    transform: rotate(30deg);
+    top: 0;
+
+}
+#two-eight{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background: #d4a373;
+    margin: auto;
+    align-items: center;
+    transform: rotate(60deg);
+    top: 0;
+
+}
+#four-ten{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background: #d4a373;
+    margin: auto;
+    align-items: center;
+    transform: rotate(120deg);
+    top: 0;
+
+}
+#five-eleven{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background: #d4a373;
+    margin: auto;
+    align-items: center;
+    transform: rotate(150deg);
+    top: 0;
+
+}
+
+#seconds{
+    width: 1px;
+    height: 50%;
+    background: #fefae0;
+    margin: auto;
+    margin-top: 0%;
+    transform-origin: 0 0;
+    transform: rotate(60deg);
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    z-index: 10;
+}
+#mins{
+    width: 3px;
+    height: 50%;
+    background: #ccd5ae;
+    margin: auto;
+    margin-top: -53%;
+    transform-origin: 0 0;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    z-index: 8;
+
+}
+#hours{
+    width: 3px;
+    height: 35%;
+    background: #ccd5ae;
+    margin: auto;
+    margin-top: -52%;
+    position: absolute;
+    top: 104%;
+    left: 51%;
+    transform-origin: 0 0;
+    transform: rotate(180deg);
+
+}
+
+#center{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin:auto;
+    margin-top: 50%;
+}
