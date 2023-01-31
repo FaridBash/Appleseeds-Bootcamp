@@ -28,10 +28,4 @@ console.log('==========================');
 squirel.callPokemon();
 squirel.attack(0);
 console.log('==========================');
-// console.log(pikatchu.callPokemon());
-// console.log(pikatchu.attack(1));
-// console.log(squirel.callPokemon());
-// console.log(squirel.attack(1));
-// console.log(charmandar.callPokemon());
-// console.log(charmandar.attack(0));
 
