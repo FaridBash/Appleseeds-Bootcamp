@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="getJoke">Joke Of The Day</button>
+    <div id="output">
+
+    </div>
+    
+    <script>
+        document.getElementById('getJoke').addEventListener('click', getJoke);
+        const myDiv=document.getElementById('output');
+        let output=``;
+        const firstReq=new XMLHttpRequest();
+        function getJoke(){
+            output=``;
+            firstReq.addEventListener('load', function(){
+                console.log("it worked");
+                const data=JSON.parse(this.responseText);
+            console.log(data.contents.jokes);
+            for(let j of data.contents.jokes){
+                console.log("test "+j.joke.text);
+                output+=`<h3>${j.joke.title}</h3>
+                <p>${j.joke.text}</p>`;
+                myDiv.innerHTML=output;
+            }
+        });
+        firstReq.addEventListener('error', ()=>{
+            console.log("ERROR");
+        });
+        
+        firstReq.open('GET','https://api.jokes.one/jod');
+        firstReq.send();
+        console.log('rqst sent');
+    }
+        
+    </script>
+</body>
+</html>
