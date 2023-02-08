@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: -webkit-linear-gradient(
+          to right,
+          #be5869,
+          #403a3e
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #be5869, #403a3e);
+      }
+      section {
+        width: 30rem;
+        height: 20rem;
+        background: #403a3e; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #be5869,
+          #403a3e
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #be5869,
+          #403a3e
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 10%;
+        border-radius: 15px;
+        color: #fff;
+      }
+      input,
+      button {
+        width: 50%;
+        height: 10%;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        background-color: rgba(120, 176, 214, 0.5);
+        text-align: center;
+      }
+      div {
+        width: 40%;
+        height: 30%;
+        background: #fff;
+        border-radius: 15px;
+        margin-top: 0;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <input type="text" id="username" />
+      <button id="search">Get User</button>
+      <div id="github-image" ></div>
+      <h4 id="github-username">Name:</h4>
+      <p id="repos"># of repos:</p>
+    </section>
+    <script>
+      const input = document.getElementById("username");
+      const btn = document.getElementById("search");
+      const myImageDiv = document.getElementById("github-image");
+      const image=document.createElement('img');
+      const username = document.getElementById("github-username");
+      const repos = document.getElementById("repos");
+      btn.addEventListener("click", (e) => {
+        const user = input.value;
+        console.log(user);
+        getProfile(user);
+      });
+
+      input.addEventListener("keypress", e=> {
+        if (e.key === "Enter") {
+        
+          btn.click();
+        }
+      });
+      const usersArr=[];
+      const usersObj={};
+      
+      async function getProfile(user) {
+        try {
+          const linkFetch = await fetch(`https://api.github.com/users/${user}`);
+          const data = await linkFetch.json();
+          console.log(data);
+          console.log(data.avatar_url);
+          usersObj.username=data.name;
+          usersObj.imageUrl=data.avatar_url;
+          usersObj.repos=data.public_repos;
+
+          usersArr.push(usersObj);
+
+          image.setAttribute("src", data.avatar_url);
+          image.style.width="50px";
+          image.style.height="50px";
+          myImageDiv.appendChild(image);
+          username.innerText = "Name:  " + data.name;
+          repos.innerText = "# of repos  " + data.public_repos;
+          input.value = "";
+          input.focus();
+
+
+
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+
+      
+    </script>
+  </body>
+</html>
