@@ -1,0 +1,9 @@
+.box2{
+    width:65rem;
+    height: 35rem;
+    background:#66f4f0 ;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}

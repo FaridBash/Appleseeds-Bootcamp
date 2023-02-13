@@ -1,0 +1,8 @@
+.ThirdBox{
+    width: 60rem;
+    height: 30rem;
+    background-color: rgb(248, 164, 164);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
