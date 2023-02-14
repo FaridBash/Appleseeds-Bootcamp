@@ -1,0 +1,13 @@
+.Wrapper{
+    width: 50rem;
+    height: 30rem;
+    background: rgb(78, 221, 234);
+    border-radius: 15px;
+}
+
+#balChild{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
