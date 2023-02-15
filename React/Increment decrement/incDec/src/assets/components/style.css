@@ -1,0 +1,17 @@
+
+
+#container{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid greenyellow;
+}
+
+#positive{
+    background: green;
+}
+#negative{
+    background: red;
+}
