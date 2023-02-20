@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <Box height={"15rem"}  />
+      <Box height={"20rem"}  />
+      <Box height={"10rem"}  />
     </div>
   )
 }
