@@ -26,7 +26,7 @@ function App() {
     );
     console.log("storage", storage);
       
-  }),[item];
+  },[storage]);
 
 
   function addItemHandler() {
@@ -36,7 +36,20 @@ function App() {
     
   }
 
-
+  function vHandler(i){
+    if(i===" "){
+      i='x';
+      return 'x';
+    }
+    if(i==="x"){
+      console.log('vHandler clicked', i);
+      i="V";
+      return "V"
+    }else if(i==="v"){
+      console.log('vHandler clicked', i);
+      return "X";
+    }
+  }
   function deleteHandler(i){
     console.log("clicked delete", i);
     const newArr=JSON.parse(localStorage.getItem("storage")).filter(element => {
@@ -63,7 +76,7 @@ function App() {
       </div>
 
       {storage.map((e, i) => {
-            return <List key={i} done={'x'} item={e} deleteHandler={deleteHandler}/>;
+            return <List key={i} done={"x - "} item={e} deleteHandler={deleteHandler} vHandler={vHandler}/>;
           })
        }
     </div>
